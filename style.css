@@ -1,0 +1,74 @@
+.requests {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.request {
+	border: 1px solid #e1e1e1;
+	margin: 10px;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr;
+	grid-template-areas:
+	"name name name img"
+	"sub sub sub ."
+	"text text text text"
+	". button button ."
+}
+
+.name {
+	display: inline;
+	grid-area: name;
+	padding: 0 0 0 10px;
+	
+}
+
+.subtitle {
+	grid-area: sub;
+	padding: 0 0 0 10px;
+	margin: 0;
+	color: #a3a3a3
+}
+
+
+
+.profile-pic {
+	padding: 10px;
+	height: 40px;
+	display: inline;
+	grid-area: img;
+}
+
+.request-text {
+	grid-area: text;
+	color: #525252;
+	padding: 0 0 0 10px;
+
+}
+
+.buttons {
+	grid-area: button;
+}
+
+.button {
+	background-color: white;
+	padding: 10px;
+	font-weight: bold;
+}
+
+
+.button-approve {
+	grid-area: button1;
+	border: 2px solid #90e3a3;
+
+}
+
+.button-decline {
+	grid-area: button2;
+	border: 2px solid #ee0016;
+}
+
+.group-name {
+	font-weight: bold;
+}
